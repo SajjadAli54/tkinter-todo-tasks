@@ -51,7 +51,7 @@ class MyApp(Tk):
         task = Task.create(title=title, description=description)
         task.save()
 
-        self.mylist.insert(self.mylist.size(), title + "\n" + description)
+        self.mylist.insert(self.mylist.size(), title + " \n" + description)
         messagebox.showinfo("Task added", "Task added successfully")
     
     def load_tasks(self):
